@@ -36,5 +36,8 @@ function cardjs() {
 }
 function colorbootstrap() {
   document.getElementById("cardfromjs").style.backgroundColor =
-    document.getElementById("input2").value;
+    document.getElementById("input3").value;
+}
+function colorbody() {
+  document.body.style.backgroundColor = document.getElementById("input2").value;
 }
