@@ -19,46 +19,52 @@
     <link rel="stylesheet" href="./tk1.css" />
   </head>
   <body>
-    <h1 id="h1id">color me</h1>
-    <input
-      type="text"
-      id="inputid"
-      onchange="titlechangecolor(), changetext() "
-      onclick="handleinputid()"
-    />
+    <div class="all">
+      <h1 id="h1id">color me</h1>
+      <input
+        type="text"
+        id="inputid"
+        onchange="titlechangecolor(), changetext() "
+        onclick="handleinputid()"
+      />
 
-    <select
-      name=""
-      id="selectid"
-      onchange="handleselectid1(),handleselectid2()
+      <select
+        name=""
+        id="selectid"
+        onchange="handleselectid1(),handleselectid2()
       changetextselect()"
-    >
-      <option value="white">white</option>
-      <option value="green">green</option>
-      <option value="blue">blue</option>
-      <option value="red">red</option>
-    </select>
-    <div class="container">
-      <div class="row">
-        <div class="col d-flex justify-content-center">
-          <div>
-            <a
-              href="#"
-              class="myButton justify-content-center w-100"
-              onclick="cardjs()"
-              >make a card</a
-            >
-          </div>
-        </div>
+      >
+        <option value="white">white</option>
+        <option value="green">green</option>
+        <option value="blue">blue</option>
+        <option value="red">red</option>
+      </select>
+      <div class="container">
         <div class="row">
-          <div class="col">
-            <div id="cardfromjs"></div>
-            <input type="text" id="input2" onchange="colorbootstrap()" />
+          <div class="col d-flex justify-content-center">
+            <div>
+              <a
+                href="#"
+                class="myButton justify-content-center w-100"
+                onclick="cardjs()"
+                >make a card</a
+              >
+            </div>
+          </div>
+          <div class="row">
+            <div class="col">
+              <div id="cardfromjs"></div>
+              <label for="input2"> for body</label>
+              <input type="text" id="input2" onchange="colorbody()" />
+              <div>
+                <label for="input3"> for card</label>
+                <input type="text" id="input3" onchange="colorbootstrap()" />
+              </div>
+            </div>
           </div>
         </div>
       </div>
     </div>
-
     <script src="./tk1.js"></script>
   </body>
 </html>
